@@ -1,3 +1,5 @@
+![immagine](https://github.com/user-attachments/assets/7860b5ab-71eb-4d5a-bf86-2835e977d034)
+
 includendo l'informazione sulla struttura delle cartelle:
 
 -------------------- HTML --------------------
