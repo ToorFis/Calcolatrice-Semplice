@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./foto/pininSerale.png">
+  <link rel="stylesheet" href="stile.css">
+  <title>SEMPLICE CALCOLATRICE</title>
+</head>
+
+<body>
+
+  <header>
+    <h1>El HARF</h1>
+    <img src="foto/EL_HARF-logo.png" alt="" id="logo">
+  </header>
+  <main>
+    <form>
+      <div id="input">
+        <div class="primo-addendo">
+          <label for="primo">Primo Addendo</label>
+          <div class="primo-input-cont">
+            <img src="foto/icon-dollar.svg" alt="" aria-hidden="true">
+            <input type="number" id="primo" name="primo" placeholder="0">
+          </div>
+        </div>
+        <fieldset id="selezione-operazione">
+          <div id="btn-container">
+            <div style="width: 224px;
+              height: 22px;">
+              <legend>Operazioni</legend>
+            </div>
+            <div class="btn-cont">
+              <input type="radio" name="selezione-operazione" id="Addizione" class="tipPercent">
+              <label for="Addizione" class="tip-label">+</label>
+            </div>
+            <div class="btn-cont">
+              <input type="radio" name="selezione-operazione" id="Sottrazione" class="tipPercent">
+              <label for="Sottrazione" class="tip-label">-</label>
+            </div>
+            <div class="btn-cont">
+              <input type="radio" name="selezione-operazione" id="Moltiplicazione" class="tipPercent">
+              <label for="Moltiplicazione" class="tip-label">*</label>
+            </div>
+            <div class="btn-cont">
+              <input type="radio" name="selezione-operazione" id="Divisione" class="tipPercent">
+              <label for="Divisione" class="tip-label">/</label>
+            </div>
+          </div>
+        </fieldset>
+        <div class="secondo-addendo">
+          <label for="number-people" class="people">Secondo Addendo
+            <span id="allerta" class="secondo-num no-allerta">Non può essere zero</span>
+          </label>
+          <div class="secondo-input-cont">
+
+            <input type="number" name="number-people" id="Secondo" placeholder="0" min="0" class="ja ">
+          </div>
+        </div>
+      </div>
+      <div id="output" aria-live="polite">
+        <div class="output-numbers totalOutput">
+          <p id="total-person">Risultato<br><span>/ tot</span></p>
+          <p id="totalSum">0.00</p>
+        </div>
+        <input type="reset" value="Reset" id="reset" name="reset" class="cancella">
+        <label for="reset" class="hide-visually">Reset</label>
+      </div>
+    </form>
+  </main>
+  <footer>
+    <div class="attribution">
+      Esercizio Prof <a href="https://pininserale.edu20.org/" target="_blank" rel="noreferrer">G.Manzo</a>.
+      Codificatore <a href="https://twitter.com/El_harf_" target="_blank" rel="noreferrer">Alunno N~7</a>.
+    </div>
+  </footer>
+  <script src="Script\script_1.js"></script>
+</body>
+
+</html>
